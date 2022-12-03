@@ -5,7 +5,7 @@ const init = () => {
       e.preventDefault();
       const input = document.querySelector('input#searchByID');
   
-      fetch(`http://localhost:3000/movies/${input.value}`)
+      fetch(`http://localhost:3000/movies/${input.value}`)//input.value returns  the value in the label
       .then(response => response.json())
       .then(data => {
         const title = document.querySelector('section#movieDetails h4');
